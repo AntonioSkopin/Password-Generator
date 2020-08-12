@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+
+<head>
+    @{ ViewData["Title"] = "Home page"; }
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="site-title">Generate a secure password</h1>
+        <br /><br />
+        <form method="post">
+            <input class="generate-bttn" type="submit" value="Generate" />
+        </form>
+        <br /><br />
+        <div class="generated-container">
+            <h3 class="generated-title">Generated password:</h3>
+            <br />
+            <p class="generated-pw">@ViewData["generatedPassword"]</p>
+        </div>
+    </div>
+</body>
